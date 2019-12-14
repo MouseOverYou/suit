@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>suitAR</title>
+
+    <style>
+        .btn {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 40px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            text-align: center;
+            z-index: 999;
+        }
+
+        html,
+
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            touch-action: none;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        #overlayImage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            z-index: 999;
+            display: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
+
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+    <script src="https://cdn.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script src="https://cdn.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+    <script src="https://cdn.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+    <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+    <script async
+        src="//apps.8thwall.com/xrweb?appKey=bUjq2BpPPDyI2DsMSEfLgoYPQ6uBvqJoiRfQapbm7hME44gW8AOPxHxLKTpLyrFcXWs74M"></script>
+</head>
+
+<body>
+    <button class="btn" type="button" onclick="startExp()">START</button>
+    <div id="fpsLabel"></div>
+    <canvas id="renderCanvas"></canvas>
+    <script type="text/javascript" src='js/AnimationsMaker.js'></script>
+    <script type="text/javascript" src='js/assetsLoader.js'></script>
+    <script type="text/javascript" src='js/GameManager.js'></script>
+    <script type="text/javascript" src='js/ChangeMaterials.js'></script>
+    <script type="text/javascript" src='js/index.js'></script>
+</body>
+
+</html>
