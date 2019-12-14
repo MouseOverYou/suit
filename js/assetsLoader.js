@@ -3,7 +3,7 @@ var dummy_P, vogelSpriteSheet, hdrTexture, planeHolder, astroAnimTask, astro_P
 function LoadAssets(scene, assetsManager) {
 
     //ENV TASK
-    var envTask = assetsManager.addCubeTextureTask("envTask", "/assets/environment.dds");
+    var envTask = assetsManager.addCubeTextureTask("envTask", "./assets/environment.dds");
 
     envTask.onSuccess = function (task) {
         //alert('HDR LOADED');
