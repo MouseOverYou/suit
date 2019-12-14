@@ -7,7 +7,7 @@ function LoadAssets(scene, assetsManager) {
 
     envTask.onSuccess = function (task) {
         //alert('HDR LOADED');
-        hdrTexture = new BABYLON.CubeTexture.CreateFromPrefilteredData("mouseoveryou.github.io/suit/assets/environment.dds", scene);
+        hdrTexture = new BABYLON.CubeTexture.CreateFromPrefilteredData("./assets/environment.dds", scene);
 
         // Create Skybox
         var hdrSkybox = BABYLON.Mesh.CreateBox("hdrSkyBox", 1000.0, scene);
