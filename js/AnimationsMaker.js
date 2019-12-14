@@ -15,7 +15,7 @@ var trackerHolder, trackerFX, sun
 var wave_P, blume_P, sonne_P, spots_P, vogel_P
 
 function createTracker(){
-    var trackerText = new BABYLON.Texture("/suit/assets/tracker_b.png", scene, true, false)
+    var trackerText = new BABYLON.Texture("./assets/tracker_b.png", scene, true, false)
     trackerText.vScale = -1
     trackerText.level =0.5
     trackMat = new BABYLON.PBRMaterial("trackMat", scene);
@@ -46,7 +46,7 @@ function createTracker(){
     noiseText.uScale = 1
     noiseText.vScale = 1
     noiseText.brightness = 0.3
-    var trackerOpacitiyText = new BABYLON.Texture("/suit/assets/tracker_opacity.png", scene, true, false)
+    var trackerOpacitiyText = new BABYLON.Texture("./assets/tracker_opacity.png", scene, true, false)
     trackerOpacitiyText.vScale = -1
     trackerOpacitiyText.level =0.5
     trackerFXMat.albedoTexture = trackerText
