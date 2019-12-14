@@ -49,7 +49,7 @@ function LoadAssets(scene, assetsManager) {
         console.log(message, exception);
     }
     */
-    astroAnimTask = assetsManager.addMeshTask("","", "./assets/astronaut.glb")
+    astroAnimTask = assetsManager.addMeshTask("","", "./assets/Astronaut.glb")
     astro_P = new BABYLON.TransformNode("astro_P")
     astro_P.rotation.x = Math.PI/2
     astro_P.rotation.y = Math.PI
